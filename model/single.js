@@ -10,4 +10,8 @@ function Single(title, name, options, score, answer){
 Single.prototype = Object.create(Topic.prototype);
 Single.prototype.constructor = Single;
 
+Single.prototype.setInputs = function(inputs){
+     this.inputs = inputs;
+}
+
 module.exports = Single;

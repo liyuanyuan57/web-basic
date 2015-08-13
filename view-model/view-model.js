@@ -8,11 +8,13 @@ var Judge = require('../model/judge.js');
 var ShortAnswer = require('../model/short-answer.js');
 
 
-function ViewModel(topics){
+function ViewModel(topics, inputs){
     this.topics = topics;
+    this.inputs = inputs;
 }
 
 ViewModel.prototype.getFillInTopics = function(){
+
     return this.topics.filter(function(topic){
         return topic instanceof FillInBlanks;
     });
@@ -41,5 +43,22 @@ ViewModel.prototype.getShortAnswerTopics = function(){
         return topic instanceof ShortAnswer;
     });
 };
+
+ViewModel.prototype.getUserInfo = function(){
+    if(this.inputs){
+        return {stu_name: this.inputs.stu_name, stu_number: this.inputs.stu_number, stu_grade: this.inputs.stu_grade};
+    }else{
+        return {stu_name: '', stu_number: '', stu_grade: ''};
+    }
+};
+
+ViewModel.prototype.getUserInput = function(){
+    var that = this;
+    that.topics.forEach(function (topic) {
+       topic.setInputs(that.inputs[topic.name]);
+    })
+}
+
+
 
 module.exports = ViewModel;

@@ -5,7 +5,7 @@
 
 <body>
 <form  action="/" method="post">
-    <% include partials/header.ejs %>
+    <%- include('partials/header.ejs', getUserInfo()) %>
     <%- include('partials/fill-in-blanks.ejs', { topics:getFillInTopics()}) %>
     <%- include('partials/single.ejs', { topics: getSingleTopics()}) %>
     <%- include('partials/multiple.ejs', { topics: getMultipleTopics()}) %>

@@ -10,4 +10,13 @@ function Judge(title, name, options, score, answer){
 Judge.prototype = Object.create(Topic.prototype);
 Judge.prototype.constructor = Judge;
 
+
+Judge.prototype.setInputs = function(inputs){
+     this.inputs = inputs;
+}
+
+//Judge.prototype.getScore = function(){
+//
+//}
+
 module.exports = Judge;

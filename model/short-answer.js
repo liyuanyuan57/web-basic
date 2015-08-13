@@ -10,4 +10,8 @@ function ShortAnswer(title, name, options, score, answer){
 ShortAnswer.prototype  = Object.create(Topic.prototype);
 ShortAnswer.prototype.constructor = ShortAnswer;
 
+ShortAnswer.prototype.setInputs = function(inputs){
+    this.inputs = inputs;
+}
+
 module.exports = ShortAnswer;

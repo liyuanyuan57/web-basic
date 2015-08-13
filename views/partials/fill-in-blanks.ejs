@@ -10,7 +10,7 @@
                 <div>
                     <label><%= topics[m].title%></label>
                     <% for(var n= 0; n<topics[m].options.length; n++){%>
-                    <input type="text" name=<%=  topics[m].name%>>
+                    <input type="text" name=<%=  topics[m].name%>  value=<%= topics[m].inputs[n]%>>
                     <%}%>
                 </div>
             </li>
