@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="utf-8">
-    <title>统一建模语言</title>
-</head>
+<% include partials/head.ejs %>
 
 <body>
 <form  action="/" method="post">
     <% include partials/header.ejs %>
-    <% include partials/fill-in-blanks.ejs %>
-    <% include partials/single.ejs %>
-    <% include partials/multiple.ejs %>
-    <% include partials/judge.ejs %>
-    <% include partials/short-answer.ejs %>
+    <%- include('partials/fill-in-blanks.ejs', { topics:getFillInTopics()}) %>
+    <%- include('partials/single.ejs', { topics: getSingleTopics()}) %>
+    <%- include('partials/multiple.ejs', { topics: getMultipleTopics()}) %>
+    <%- include('partials/judge.ejs', { topics: getJudgeTopics()}) %>
+    <%- include('partials/short-answer.ejs', { topics: getShortAnswerTopics()}) %>
 
     <input type="submit" value="submit">
 </form>
