@@ -80,42 +80,20 @@
 
         <div>
             <ol>
+                <% for(var m= 0; m<simpleTopics.length; m++) {%>
                 <li>
                     <div>
-                        <label>UML 与软件工程的关系是:</label>
+                        <label><%=  simpleTopics[m].title%></label>
+                        <% for(var n= 0; n<simpleTopics[m].options.length; n++){%>
                         <div >
-                            <input type="radio" name="2_1">(A)UML 就是软件工程
+                            <input type="radio" name=<%=  simpleTopics[m].title%>>
+                            <%= simpleTopics[m].options[n].describe%>
                         </div>
-                        <div >
-                            <input type="radio" name="2_1">(B)UML 参与到软件工程中软件开发过程的几个阶段
-                        </div>
-                        <div >
-                            <input type="radio" name="2_1">(C)UML 与软件工程无关
-                        </div>
-                        <div >
-                            <input type="radio" name="2_1">(D)UML 是软件工程的一部分
-                        </div>
-
+                        <%}%>
                     </div>
                 </li>
 
-                <li>
-                    <div>
-                        <label>ava 语言支持:</label>
-                        <div >
-                            <input type="radio" name="2_2">(A)单继承
-                        </div>
-                        <div >
-                            <input type="radio" name="2_2">(B)多继承
-                        </div>
-                        <div >
-                            <input type="radio" name="2_2">(C)单继承和多继承都支持
-                        </div>
-                        <div >
-                            <input type="radio" name="2_2">(D)单继承和多继承都不支持
-                        </div>
-                    </div>
-                </li>
+               <%}%>
             </ol>
         </div>
     </div>
