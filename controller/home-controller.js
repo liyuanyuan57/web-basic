@@ -66,6 +66,34 @@ res.render('index',{
                 {"describe":"(D)方法(Function)",  "items":"D"}
             ]
         }
+    ],
+
+    "judgeTopics":[
+        {
+            "title":"用例图只是用于和客户交流和沟通的,用于确定需求。",
+            "name":"4_1",
+            "options":[
+                {"describe":"TRUE", "items":"TRUE"},
+                {"describe":"FALSE",  "items":"FALSE"}
+            ]
+        },
+        {
+            "title":"在状态图中,终止状态在一个状态图中允许有任意多个。",
+            "name":"4_2",
+            "options":[
+                {"describe":"TRUE", "items":"TRUE"},
+                {"describe":"FALSE",  "items":"FALSE"}
+            ]
+        }
+    ],
+    "shortTopics":[
+        {
+            "title":"简述什么是模型以及模型的表现形式?",
+            "name":"5_1",
+            "options":[
+                {"describe":null,  "items":null}
+            ]
+        }
     ]
 });
 
