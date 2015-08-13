@@ -1,0 +1,24 @@
+<div >
+    <div>
+        <h4>二、选择题(共20分，每题10分)</h4>
+    </div>
+
+    <div>
+        <ol>
+            <% for(var m= 0; m<simpleTopics.length; m++) {%>
+            <li>
+                <div>
+                    <label><%=  simpleTopics[m].title%></label>
+                    <% for(var n= 0; n<simpleTopics[m].options.length; n++){%>
+                    <div >
+                        <input type="radio" name=<%=  simpleTopics[m].name%>>
+                        <%= simpleTopics[m].options[n].describe%>
+                    </div>
+                    <%}%>
+                </div>
+            </li>
+
+            <%}%>
+        </ol>
+    </div>
+</div>

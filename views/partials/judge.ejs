@@ -1,0 +1,24 @@
+<div >
+    <div>
+        <h4>四、判断题(共20分，每题10分)</h4>
+    </div>
+
+    <div>
+        <ol>
+            <% for(var m= 0; m<judgeTopics.length; m++) {%>
+            <li>
+                <div>
+                    <label><%=  judgeTopics[m].title%></label>
+                    <% for(var n= 0; n<judgeTopics[m].options.length; n++){%>
+                    <div >
+                        <input type="radio" name=<%=  judgeTopics[m].name%>>
+                        <%= judgeTopics[m].options[n].describe%>
+                    </div>
+                    <%}%>
+                </div>
+            </li>
+
+            <%}%>
+        </ol>
+    </div>
+</div>

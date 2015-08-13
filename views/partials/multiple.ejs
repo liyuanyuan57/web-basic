@@ -1,0 +1,23 @@
+<div >
+    <div>
+        <h4>三、多选题(共20分，每题10分)</h4>
+    </div>
+
+    <div>
+        <ol>
+            <% for(var m= 0; m<multipleTopics.length; m++) {%>
+            <li>
+                <div>
+                    <label><%=  multipleTopics[m].title%></label>
+                    <% for(var n= 0; n<multipleTopics[m].options.length; n++){%>
+                    <div >
+                        <input type="checkbox" name=<%=  multipleTopics[m].name%>>
+                        <%= multipleTopics[m].options[n].describe%>
+                    </div>
+                    <%}%>
+                </div>
+            </li>
+            <%}%>
+        </ol>
+    </div>
+</div>
