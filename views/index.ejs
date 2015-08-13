@@ -106,42 +106,19 @@
 
         <div>
             <ol>
+                <% for(var m= 0; m<multipleTopics.length; m++) {%>
                 <li>
                     <div>
-                        <label>用例的粒度分为以下哪三种：</label>
+                        <label><%=  multipleTopics[m].title%></label>
+                        <% for(var n= 0; n<multipleTopics[m].options.length; n++){%>
                         <div >
-                            <input type="checkbox" name="3_1">(A)概述级、
+                            <input type="checkbox" name=<%=  multipleTopics[m].title%>>
+                            <%= multipleTopics[m].options[n].describe%>
                         </div>
-                        <div >
-                            <input type="checkbox" name="3_1">(B)需求级
-                        </div>
-                        <div >
-                            <input type="checkbox" name="3_1">(C)用户目标级
-                        </div>
-                        <div >
-                            <input type="checkbox" name="3_1">(D)子功能级
-                        </div>
-
+                        <%}%>
                     </div>
                 </li>
-
-                <li>
-                    <div>
-                        <label>Java 语言支持:</label>
-                        <div >
-                            <input type="checkbox" name="3_2">(A)名称(Name)
-                        </div>
-                        <div >
-                            <input type="checkbox" name="3_2">(B)属性(Attribute)
-                        </div>
-                        <div >
-                            <input type="checkbox" name="3_2">(C)操作(Operation)
-                        </div>
-                        <div >
-                            <input type="checkbox" name="3_2">(D)方法(Function)
-                        </div>
-                    </div>
-                </li>
+                <%}%>
             </ol>
         </div>
     </div>

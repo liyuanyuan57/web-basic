@@ -44,6 +44,28 @@ res.render('index',{
                 {"describe":"(D)UML 是软件工程的一部分",  "items":"D"}
             ]
         }
+    ],
+    "multipleTopics":[
+        {
+            "title":"用例的粒度分为以下哪三种:",
+            "name":"3_1",
+            "options":[
+                {"describe":"(A)概述级", "items":"A"},
+                {"describe":"(B)需求级",  "items":"B"},
+                {"describe":"(C)用户目标级、",  "items":"C"},
+                {"describe":"(D)子功能级",  "items":"D"}
+            ]
+        },
+        {
+            "title":"类图由以下哪三部分组成。",
+            "name":"3_2",
+            "options":[
+                {"describe":"(A)名称(Name)", "items":"A"},
+                {"describe":"(B)属性(Attribute)",  "items":"B"},
+                {"describe":"(C)操作(Operation)",  "items":"C"},
+                {"describe":"(D)方法(Function)",  "items":"D"}
+            ]
+        }
     ]
 });
 
