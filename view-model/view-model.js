@@ -44,20 +44,37 @@ ViewModel.prototype.getShortAnswerTopics = function(){
     });
 };
 
-ViewModel.prototype.getUserInfo = function(){
-    if(this.inputs){
-        return {stu_name: this.inputs.stu_name, stu_number: this.inputs.stu_number, stu_grade: this.inputs.stu_grade};
-    }else{
-        return {stu_name: '', stu_number: '', stu_grade: ''};
-    }
-};
-
 ViewModel.prototype.getUserInput = function(){
     var that = this;
     that.topics.forEach(function (topic) {
-       topic.setInputs(that.inputs[topic.name]);
+        topic.setInputs(that.inputs[topic.name]);
     })
-}
+};
+
+ViewModel.prototype.getTotalscore = function(){
+    var totalscore = 0;
+    this.topics.forEach(function (topic) {
+        totalscore += topic.getScore();
+    });
+    //totalscore = this.topics[6].getScore();
+    console.log(totalscore);
+    return totalscore;
+};
+
+ViewModel.prototype.getUserInfo = function(){
+    if(this.inputs){
+        return {stu_name: this.inputs.stu_name,
+                stu_number: this.inputs.stu_number,
+                stu_grade: this.inputs.stu_grade,
+                totalscore: this.getTotalscore()};
+    }else{
+        return {stu_name: '', stu_number: '', stu_grade: '', totalscore:''};
+    }
+};
+
+
+
+
 
 
 

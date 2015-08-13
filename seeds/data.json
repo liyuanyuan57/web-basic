@@ -12,7 +12,7 @@
         {"describe":null, "items":null}
       ],
      "answer": ["统一建模语言"],
-     "score": "5",
+     "score": 5,
      "type": "fillIn"
 
     },
@@ -25,7 +25,7 @@
         {"describe":null,  "items":null}
       ],
       "answer": ["封装性", "继承性", "多态性"],
-      "score": "5",
+      "score": 5,
       "type": "fillIn"
     },
 
@@ -38,8 +38,8 @@
         {"describe":"(C)UML 与软件工程无关",  "items":"C"},
         {"describe":"(D)UML 是软件工程的一部分",  "items":"D"}
       ],
-      "answer": "D",
-      "score": "10",
+      "answer": "B",
+      "score": 10,
       "type": "single"
 
     },
@@ -54,8 +54,8 @@
         {"describe":"(C)UML 与软件工程无关",  "items":"C"},
         {"describe":"(D)UML 是软件工程的一部分",  "items":"D"}
       ],
-      "answer": "C",
-      "score": "10",
+      "answer": "A",
+      "score": 10,
       "type": "single"
     },
 
@@ -70,7 +70,7 @@
         {"describe":"(D)子功能级",  "items":"D"}
       ],
       "answer": "ABC",
-      "score": "10",
+      "score": 10,
       "type": "multiple"
     },
 
@@ -84,7 +84,7 @@
         {"describe":"(D)方法(Function)",  "items":"D"}
       ],
       "answer": "ABD",
-      "score": "10",
+      "score": 10,
       "type": "multiple"
     },
 
@@ -97,7 +97,7 @@
         {"describe":"FALSE",  "items":"FALSE"}
       ],
       "answer": "FALSE",
-      "score": "10",
+      "score": 10,
       "type": "judge"
     },
 
@@ -109,7 +109,7 @@
         {"describe":"FALSE",  "items":"FALSE"}
       ],
       "answer": "TRUE",
-      "score": "10",
+      "score": 10,
       "type": "judge"
     },
 
@@ -120,7 +120,7 @@
         {"describe":null,  "items":null}
       ],
       "answer": "模型是对现实世界的简化和抽象,模型是对所研究的系统、过程、事物或概念的一种表达形式。可以是物理实体;可以是某种图形;或者是一种数学表达式。",
-      "score": "20",
+      "score": 20,
       "type": "shortAnswer"
     }
    ]

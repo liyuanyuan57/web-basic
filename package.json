@@ -1,0 +1,26 @@
+{
+  "name": "web-bsic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liyuanyuan57/web-basic.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liyuanyuan57/web-basic/issues"
+  },
+  "homepage": "https://github.com/liyuanyuan57/web-basic#readme",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "ejs": "^2.3.3",
+    "express": "^4.13.3",
+    "lodash": "^3.10.1"
+  }
+}

@@ -16,10 +16,13 @@ FillInBlanks.prototype.constructor = FillInBlanks;
 
 FillInBlanks.prototype.setInputs = function(inputs){
      this.inputs = inputs instanceof Array ? inputs:new Array(inputs);
+
+
 }
 
-//FillInBlanks.prototype.getScore = function(){
-//    return _.intersection(this.inputs, this.value).length * this.score;
-//}
+FillInBlanks.prototype.getScore = function(){
+
+    return _.intersection(this.inputs, this.answer).length * this.score;
+}
 
 module.exports = FillInBlanks;

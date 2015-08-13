@@ -12,11 +12,11 @@ Judge.prototype.constructor = Judge;
 
 
 Judge.prototype.setInputs = function(inputs){
-     this.inputs = inputs;
+    this.inputs = inputs;
 }
 
-//Judge.prototype.getScore = function(){
-//
-//}
+Judge.prototype.getScore = function(){
+    return  this.inputs === this.answer? this.score:0;
+}
 
 module.exports = Judge;

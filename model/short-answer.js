@@ -11,7 +11,11 @@ ShortAnswer.prototype  = Object.create(Topic.prototype);
 ShortAnswer.prototype.constructor = ShortAnswer;
 
 ShortAnswer.prototype.setInputs = function(inputs){
-    this.inputs = inputs instanceof Array ? inputs:new Array(inputs);
+    this.inputs = inputs;
+}
+
+ShortAnswer.prototype.getScore = function(){
+    return  this.inputs === this.answer? this.score:0;
 }
 
 module.exports = ShortAnswer;

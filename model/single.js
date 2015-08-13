@@ -11,7 +11,11 @@ Single.prototype = Object.create(Topic.prototype);
 Single.prototype.constructor = Single;
 
 Single.prototype.setInputs = function(inputs){
-     this.inputs = inputs;
+    this.inputs = inputs;
+}
+
+Single.prototype.getScore = function(){
+    return  this.inputs === this.answer? this.score:0;
 }
 
 module.exports = Single;
