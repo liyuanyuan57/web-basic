@@ -8,7 +8,7 @@ Multiple.prototype = Object.create(Topic.prototype);
 Multiple.prototype.constructor = Multiple;
 
 Multiple.prototype.setInputs = function(inputs){
-    this.inputs = inputs;
+    this.inputs = inputs instanceof Array ? inputs:new Array(inputs);
 }
 
 module.exports = Multiple;

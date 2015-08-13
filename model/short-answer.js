@@ -11,7 +11,7 @@ ShortAnswer.prototype  = Object.create(Topic.prototype);
 ShortAnswer.prototype.constructor = ShortAnswer;
 
 ShortAnswer.prototype.setInputs = function(inputs){
-    this.inputs = inputs;
+    this.inputs = inputs instanceof Array ? inputs:new Array(inputs);
 }
 
 module.exports = ShortAnswer;
