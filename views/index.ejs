@@ -32,20 +32,21 @@
         <div>
             <div>
                 <label>班级： </label>
-                <input type="text" id="class">
+                <input type="text" name="class">
             </div>
 
             <div>
                 <label>姓名： </label>
-                <input type="text" id="name">
+                <input type="text" name="name">
             </div>
 
             <div>
                 <label>学号： </label>
-                <input type="text" id="number">
+                <input type="text" name="number">
             </div>
         </div>
     </header>
+
 
     <div >
         <div>
@@ -54,24 +55,23 @@
 
         <div>
             <ol>
+                <% for(var m= 0; m<topics.length; m++) {%>
                 <li>
                     <div>
-                        <label>UML 的中文全称是:</label>
-                        <input type="text" name="1_1">
+                        <label><%=  topics[m].title%></label>
+                        <% for(var n= 0; n<topics[m].options.length; n++){%>
+                        <input type="text" name=<%=  topics[m].title%>>
+                        <%}%>
                     </div>
                 </li>
-
-                <li>
-                    <div>
-                        <label>对象最突出的特征是:</label>
-                        <input type="text" name="1_2">
-                        <input type="text" name="1_2">
-                        <input type="text" name="1_2">
-                    </div>
-                </li>
+                <%}%>
             </ol>
         </div>
     </div>
+
+
+
+
 
     <div >
         <div>
