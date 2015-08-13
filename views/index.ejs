@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>统一建模语言</title>
+</head>
+
+<body>
+<form  action="/" method="post">
+
+    <header>
+        <div>
+            <h3>统一建模语言</h3>
+        </div>
+        <div>
+            <div>
+                <label>科目：</label>
+                <u>统一建模语言</u>
+            </div>
+            <div>
+                <label>时间：</label>
+                <u>100分钟</u>
+            </div>
+
+            <div>
+                <label>得分： </label>
+                <input type="text" id="totalScore">
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <label>班级： </label>
+                <input type="text" id="class">
+            </div>
+
+            <div>
+                <label>姓名： </label>
+                <input type="text" id="name">
+            </div>
+
+            <div>
+                <label>学号： </label>
+                <input type="text" id="number">
+            </div>
+        </div>
+    </header>
+
+    <div >
+        <div>
+            <h4>一、填空题(共20分，每空5分)</h4>
+        </div>
+
+        <div>
+            <ol>
+                <li>
+                    <div>
+                        <label>UML 的中文全称是:</label>
+                        <input type="text" name="1_1">
+                    </div>
+                </li>
+
+                <li>
+                    <div>
+                        <label>对象最突出的特征是:</label>
+                        <input type="text" name="1_2">
+                        <input type="text" name="1_2">
+                        <input type="text" name="1_2">
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <div >
+        <div>
+            <h4>二、选择题(共20分，每题10分)</h4>
+        </div>
+
+        <div>
+            <ol>
+                <li>
+                    <div>
+                        <label>UML 与软件工程的关系是:</label>
+                        <div >
+                            <input type="radio" name="2_1">(A)UML 就是软件工程
+                        </div>
+                        <div >
+                            <input type="radio" name="2_1">(B)UML 参与到软件工程中软件开发过程的几个阶段
+                        </div>
+                        <div >
+                            <input type="radio" name="2_1">(C)UML 与软件工程无关
+                        </div>
+                        <div >
+                            <input type="radio" name="2_1">(D)UML 是软件工程的一部分
+                        </div>
+
+                    </div>
+                </li>
+
+                <li>
+                    <div>
+                        <label>ava 语言支持:</label>
+                        <div >
+                            <input type="radio" name="2_2">(A)单继承
+                        </div>
+                        <div >
+                            <input type="radio" name="2_2">(B)多继承
+                        </div>
+                        <div >
+                            <input type="radio" name="2_2">(C)单继承和多继承都支持
+                        </div>
+                        <div >
+                            <input type="radio" name="2_2">(D)单继承和多继承都不支持
+                        </div>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+
+    <div >
+        <div>
+            <h4>三、多选题(共20分，每题10分)</h4>
+        </div>
+
+        <div>
+            <ol>
+                <li>
+                    <div>
+                        <label>用例的粒度分为以下哪三种：</label>
+                        <div >
+                            <input type="checkbox" name="3_1">(A)概述级、
+                        </div>
+                        <div >
+                            <input type="checkbox" name="3_1">(B)需求级
+                        </div>
+                        <div >
+                            <input type="checkbox" name="3_1">(C)用户目标级
+                        </div>
+                        <div >
+                            <input type="checkbox" name="3_1">(D)子功能级
+                        </div>
+
+                    </div>
+                </li>
+
+                <li>
+                    <div>
+                        <label>Java 语言支持:</label>
+                        <div >
+                            <input type="checkbox" name="3_2">(A)名称(Name)
+                        </div>
+                        <div >
+                            <input type="checkbox" name="3_2">(B)属性(Attribute)
+                        </div>
+                        <div >
+                            <input type="checkbox" name="3_2">(C)操作(Operation)
+                        </div>
+                        <div >
+                            <input type="checkbox" name="3_2">(D)方法(Function)
+                        </div>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+
+    <div >
+        <div>
+            <h4>四、判断题(共20分，每题10分)</h4>
+        </div>
+
+        <div>
+            <ol>
+                <li>
+                    <div>
+                        <label>用例图只是用于和客户交流和沟通的,用于确定需求。</label>
+                        <div >
+                            <input type="radio" name="4_1">TRUE
+                        </div>
+                        <div >
+                            <input type="radio" name="4_1">FALSE
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div>
+                        <label>在状态图中,终止状态在一个状态图中允许有任意多个。</label>
+                        <div >
+                            <input type="radio" name="4_2">TRUE
+                        </div>
+                        <div >
+                            <input type="radio" name="4_2">FALSE
+                        </div>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+
+    <div >
+        <div>
+            <h4>五、简答题(共20分)</h4>
+        </div>
+
+        <div>
+            <ol>
+                <li>
+                    <div>
+                        <label>简述什么是模型以及模型的表现形式?</label>
+                        <div >
+                            <textarea name="5_1" rows="8" cols="40"></textarea>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <input type="submit" value="submit">
+</form>
+</body>
+
+</html>
