@@ -15,7 +15,7 @@ FillInBlanks.prototype.constructor = FillInBlanks;
 
 
 FillInBlanks.prototype.setInputs = function(inputs) {
-  this.inputs = inputs instanceof Array ? inputs : new Array(inputs);
+  this.inputs = inputs instanceof Array ? inputs : [inputs];
 
 
 }
