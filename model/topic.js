@@ -8,10 +8,10 @@ function Topic(title, name, options, score, answer) {
 }
 
 Topic.prototype.setInputs = function(inputs) {
-  this.inputs = inputs;
+  this.inputs = inputs instanceof Array ? inputs : [inputs];
 }
 
-Topic.prototype.getScore = function() {
-
+Topic.prototype.mark = function() {
+//mark
 }
 module.exports = Topic;

@@ -54,7 +54,7 @@ ViewModel.prototype.getUserInput = function() {
 ViewModel.prototype.getTotalscore = function() {
   var totalscore = 0;
   this.topics.forEach(function(topic) {
-    totalscore += topic.getScore();
+    totalscore += topic.mark();
   });
   console.log(totalscore);
   return totalscore;

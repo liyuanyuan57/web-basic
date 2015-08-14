@@ -1,6 +1,3 @@
-/**
- * Created by liyuanyuan on 8/13/15.
- */
 var Topic = require('./topic.js');
 
 function ShortAnswer(title, name, options, score, answer) {
@@ -10,11 +7,7 @@ function ShortAnswer(title, name, options, score, answer) {
 ShortAnswer.prototype = Object.create(Topic.prototype);
 ShortAnswer.prototype.constructor = ShortAnswer;
 
-ShortAnswer.prototype.setInputs = function(inputs) {
-  this.inputs = inputs;
-}
-
-ShortAnswer.prototype.getScore = function() {
+ShortAnswer.prototype.mark = function() {
   return this.inputs === this.answer ? this.score : 0;
 }
 

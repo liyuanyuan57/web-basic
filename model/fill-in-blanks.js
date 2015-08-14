@@ -12,15 +12,7 @@ function FillInBlanks(title, name, options, score, answer) {
 FillInBlanks.prototype = FillInBlanks.prototype = Object.create(Topic.prototype);
 FillInBlanks.prototype.constructor = FillInBlanks;
 
-
-
-FillInBlanks.prototype.setInputs = function(inputs) {
-  this.inputs = inputs instanceof Array ? inputs : [inputs];
-
-
-}
-
-FillInBlanks.prototype.getScore = function() {
+FillInBlanks.prototype.mark = function() {
 
   return _.intersection(this.inputs, this.answer).length * this.score;
 }
