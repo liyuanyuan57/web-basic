@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var router = require('./router/index.js');
+var router = require('./router/router');
 
 var bodyParser = require('body-parser');
 
@@ -13,8 +13,7 @@ app.use(bodyParser.urlencoded({
 
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
-
-app.use('/', router);
+router.setRouter(app);
 app.use('/public', express.static(__dirname + '/public'));
 app.use('/bower_components', express.static(__dirname + '/bower_components'));
 
