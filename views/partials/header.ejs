@@ -1,37 +1,46 @@
 <header>
-    <div>
-        <h3>统一建模语言</h3>
+  <div class="container-fluid panel panel-primary">
+    <div class="panel-heading text-center">
+      <h3><%= data.title %></h3>
     </div>
-    <div>
-        <div>
-            <label><%= data.header.subject%></label>
-            <u><%= data.title%></u>
-        </div>
-        <div>
-            <label>时间：</label>
-            <u><%= data.header.time%></u>
+    <br/>
+    <div class="pane-body row">
+      <div class="col-md-12 form-inline">
+        <div class="col-md-4">
+            <label>科目：</label>
+            <u><%= data.header.subject %></u>
         </div>
 
-        <div>
-            <label>得分： </label>
-            <input type="text" id="totalScore" value=<%= userInfo.totalscore%>>
+        <div class="form-group col-md-4">
+          <label>时间：</label>
+          <u><%= data.header.time %></u>
         </div>
+
+        <div class="form-group col-md-4">
+        <label>得分： </label>
+        <input type="text" class="form-control" name="totalScore" value=<%= userInfo.totalscore%>>
+        </div>
+      </div>
+
+      <div class="col-md-12 form-inline">
+
+        <div class="form-group col-md-4">
+          <label>班级： </label>
+          <input type="text" class="form-control" name="stu_grade" value = <%= userInfo.stu_grade%>>
+        </div>
+
+        <div class="form-group col-md-4">
+        <label>姓名： </label>
+        <input type="text" class="form-control" name="stu_name"  value = <%= userInfo.stu_name%>>
+        </div>
+
+        <div class="form-group col-md-4">
+          <label>学号： </label>
+          <input type="text" class="form-control" name="stu_number"  value = <%= userInfo.stu_number%>>
+        </div>
+
+      </div>
     </div>
+  </div>
 
-    <div>
-        <div>
-            <label>班级： </label>
-            <input type="text" name="stu_grade" value = <%= userInfo.stu_grade%>>
-        </div>
-
-        <div>
-            <label>姓名： </label>
-            <input type="text" name="stu_name"  value = <%= userInfo.stu_name%>>
-        </div>
-
-        <div>
-            <label>学号： </label>
-            <input type="text" name="stu_number"  value = <%= userInfo.stu_number%>>
-        </div>
-    </div>
 </header>

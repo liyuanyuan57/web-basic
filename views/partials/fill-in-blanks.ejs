@@ -1,20 +1,22 @@
-<div >
-    <div>
-        <h4>一、填空题(共20分，每空5分)</h4>
-    </div>
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h4>一、填空题(共20分，每空5分)</h4>
+  </div>
 
-    <div>
-        <ol>
-            <% for(var m= 0; m<topics.length; m++) {%>
-            <li>
-                <div>
-                    <label><%= topics[m].title%></label>
-                    <% for(var n= 0; n<topics[m].options.length; n++){%>
-                    <input type="text" name=<%=  topics[m].name%>  value=<%= topics[m].inputs[n]%>>
-                    <%}%>
-                </div>
-            </li>
-            <%}%>
-        </ol>
-    </div>
+  <div class="panel-body">
+    <ol>
+      <% for(var m= 0; m<topics.length; m++) {%>
+        <li>
+          <div class="form-inline">
+              <div class="form-group">
+                <label><%= topics[m].title%></label>
+                <% for(var n= 0; n<topics[m].options.length; n++){%>
+                  <input type="text" class="form-control" name=<%=  topics[m].name%>  value=<%= topics[m].inputs[n]%>>
+                <%}%>
+              </div>
+          </div>
+        </li>
+      <%}%>
+    </ol>
+  </div>
 </div>
