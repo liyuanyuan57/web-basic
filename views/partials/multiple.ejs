@@ -12,7 +12,7 @@
             <div class="row form-inline">
               <% for(var n= 0; n<topics[m].options.length; n++){%>
                 <label class="col-md-12 control-label">
-                <input type="checkbox" name=<%= topics[m].name%> value=<%= topics[m].options[n].items%>
+                <input type="checkbox" name=<%= topics[m].name%> value="<%= topics[m].options[n].items%>"
                   <% if(topics[m].inputs.indexOf(topics[m].options[n].items) !== -1){%>
                     checked="checked"<% }%>>
                   <%= topics[m].options[n].describe%>
