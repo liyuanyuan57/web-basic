@@ -8,7 +8,6 @@ Single.prototype = Object.create(Topic.prototype);
 Single.prototype.constructor = Single;
 
 Single.prototype.mark = function() {
-  console.log(this.inputs+'   '+this.answer);
   return this.inputs.join('') === this.answer.join('') ? this.score : 0;
 }
 
