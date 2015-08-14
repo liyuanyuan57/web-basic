@@ -1,15 +1,15 @@
-<div class="panel panel-info">
+<div class="container panel panel-info">
   <div class="panel-heading">
     <h4>一、填空题(共20分，每空5分)</h4>
   </div>
 
-  <div class="panel-body">
+  <div class="container panel-body">
     <ol>
       <% for(var m= 0; m<topics.length; m++) {%>
         <li>
+          <label><%= topics[m].title%></label>
           <div class="form-inline">
               <div class="form-group">
-                <label><%= topics[m].title%></label>
                 <% for(var n= 0; n<topics[m].options.length; n++){%>
                   <input type="text" class="form-control" name=<%=  topics[m].name%>  value=<%= topics[m].inputs[n]%>>
                 <%}%>

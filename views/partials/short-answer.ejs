@@ -1,24 +1,22 @@
-<div class="panel panel-info">
-    <div class="panel-heading">
-        <h4>五、简答题(共20分)</h4>
-    </div>
+<div class="container panel panel-info">
+  <div class="panel-heading">
+    <h4>五、简答题(共20分)</h4>
+  </div>
 
-    <div class="panel-body">
-        <ol>
-
-            <% for(var m= 0; m<topics.length; m++) {%>
-            <li>
-                <div>
-                    <label><%=  topics[m].title%></label>
-                    <% for(var n= 0; n<topics[m].options.length; n++){%>
-                    <div >
-                        <input type="text" name="5_1" class="form-control"  value=<%= topics[m].inputs%>>
-                    </div>
-                    <%}%>
+  <div class="container panel-body">
+    <ol>
+      <% for(var m = 0; m < topics.length; m++) {%>
+        <li>
+          <div>
+            <label><%= topics[m].title%></label>
+              <% for(var n = 0; n < topics[m].options.length; n++){%>
+                <div >
+                  <textarea type="text" name=<%= topics[m].name%> class="form-control" rows="8" cols="40"><%= topics[m].inputs%></textarea>
                 </div>
-            </li>
-
-            <%}%>
-        </ol>
-    </div>
+              <%}%>
+          </div>
+        </li>
+<%}%>
+</ol>
+</div>
 </div>

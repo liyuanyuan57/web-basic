@@ -1,27 +1,27 @@
-<div class="panel panel-info">
-    <div class="panel-heading">
-        <h4>二、选择题(共20分，每题10分)</h4>
-    </div>
+<div class="container panel panel-info">
+  <div class="panel-heading">
+    <h4>二、选择题(共20分，每题10分)</h4>
+  </div>
 
-    <div class="panel-body">
-        <ol>
-            <% for(var m= 0; m<topics.length; m++) {%>
-            <li>
-                <label><%=  topics[m].title%></label>
-                <div class="row form-inline">
-                <% for(var n= 0; n<topics[m].options.length; n++){%>
+  <div class="container panel-body">
+    <ol>
+      <% for(var m= 0; m<topics.length; m++) {%>
+        <li>
+          <label><%= topics[m].title%></label>
+          <div class="container">
+            <div class="row form-inline">
+              <% for(var n = 0; n < topics[m].options.length; n++){%>
                 <label class="col-md-12 control-label">
-                    <input type="radio" class="form-control" name=<%=  topics[m].name%> value=<%= topics[m].options[n].items%>
-                            <% if(topics[m].inputs=== topics[m].options[n].items){%> checked="checked"<%}%>>
-                        <%= topics[m].options[n].describe%>
-                    </label>
-                    <%}%>
-                </div>
-            </li>
-
-            <%}%>
-        </ol>
-    </div>
-
+                <input type="radio"  name=<%=  topics[m].name%> value=<%= topics[m].options[n].items%>
+                  <% if(topics[m].inputs=== topics[m].options[n].items){%> checked="checked"<%}%>>
+                  <%= topics[m].options[n].describe%>
+                </label>
+              <%}%>
+            </div>
+          </div>
+        </li>
+      <%}%>
+    </ol>
+  </div>
 
 </div>

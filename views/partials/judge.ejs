@@ -1,21 +1,26 @@
-<div class="panel panel-info">
+<div class="container panel panel-info">
   <div class="panel-heading">
     <h4>四、判断题(共20分，每题10分)</h4>
   </div>
 
-  <div class="panel-body">
+  <div class="container panel-body">
     <ol>
-      <% for(var m= 0; m<topics.length; m++) {%>
+      <% for(var m = 0; m < topics.length; m++) {%>
         <li>
-            <label><%=  topics[m].title%></label>
+            <label><%= topics[m].title%></label>
               <% for(var n= 0; n<topics[m].options.length; n++){%>
                 <label class="radio-inline">
-                <input type="radio" name=<%=  topics[m].name%> value=<%= topics[m].options[n].items%>
+                <input type="radio" name=<%= topics[m].name%> value=<%= topics[m].options[n].items%>
                 <% if(topics[m].inputs=== topics[m].options[n].items){%> checked="checked"<%}%>>
-                <%= topics[m].options[n].describe%>
+
+                <% if(topics[m].options[n].items === "TRUE"){%>
+                <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
+                <%}else{%>
+                <span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span>
+                <%}%>
+
               </label>
             <%}%>
-
       </li>
       <%}%>
     </ol>
