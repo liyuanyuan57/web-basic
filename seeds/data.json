@@ -49,7 +49,7 @@
         "describe": "(D)UML 是软件工程的一部分",
         "items": "D"
       }],
-      "answer": "B",
+      "answer": ["D"],
       "score": 10,
       "type": "single"
 
@@ -72,7 +72,7 @@
         "describe": "(D)UML 是软件工程的一部分",
         "items": "D"
       }],
-      "answer": "A",
+      "answer": ["C"],
       "score": 10,
       "type": "single"
     },
@@ -94,7 +94,7 @@
         "describe": "(D)子功能级",
         "items": "D"
       }],
-      "answer": "ABC",
+      "answer": ["A","B","C"],
       "score": 10,
       "type": "multiple"
     },
@@ -115,7 +115,7 @@
         "describe": "(D)方法(Function)",
         "items": "D"
       }],
-      "answer": "ABD",
+      "answer": ["A","B","D"],
       "score": 10,
       "type": "multiple"
     },
@@ -131,7 +131,7 @@
         "describe": "FALSE",
         "items": "FALSE"
       }],
-      "answer": "FALSE",
+      "answer": ["FALSE"],
       "score": 10,
       "type": "judge"
     },
@@ -146,7 +146,7 @@
         "describe": "FALSE",
         "items": "FALSE"
       }],
-      "answer": "TRUE",
+      "answer": ["TRUE"],
       "score": 10,
       "type": "judge"
     },
@@ -158,7 +158,7 @@
         "describe": null,
         "items": null
       }],
-      "answer": "模型是对现实世界的简化和抽象,模型是对所研究的系统、过程、事物或概念的一种表达形式。可以是物理实体;可以是某种图形;或者是一种数学表达式。",
+      "answer": ["模型是对现实世界的简化和抽象,模型是对所研究的系统、过程、事物或概念的一种表达形式。可以是物理实体;可以是某种图形;或者是一种数学表达式。"],
       "score": 20,
       "type": "shortAnswer"
     }
