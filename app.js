@@ -16,6 +16,7 @@ app.set('view engine', 'ejs');
 
 app.use('/', router);
 app.use('/public', express.static(__dirname + '/public'));
+app.use('/bower_components', express.static(__dirname + '/bower_components'));
 
 
 app.locals.data = require('./seeds/data.json');

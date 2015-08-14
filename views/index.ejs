@@ -4,27 +4,23 @@
 <% include partials/head.ejs %>
 
   <body>
-    <div class="row">
-      <div class="col-md-2"></div>
-      <div class="col-md-8">
+    <div class="container row">
+      <div class="col-md-1"></div>
+      <div class="col-md-9">
         <form action="/" method="post">
           <%- include('partials/header.ejs', {userInfo: getUserInfo()}) %>
-          <%- include('partials/fill-in-blanks.ejs', { topics:getFillInTopics()}) %>
-          <%- include('partials/single.ejs', { topics: getSingleTopics()}) %>
-          <%- include('partials/multiple.ejs', { topics: getMultipleTopics()}) %>
-          <%- include('partials/judge.ejs', { topics: getJudgeTopics()}) %>
-          <%- include('partials/short-answer.ejs', { topics: getShortAnswerTopics()}) %>
+          <%- include('partials/fill-in-blanks.ejs', {topics:getFillInTopics()}) %>
+          <%- include('partials/single.ejs', {topics: getSingleTopics()}) %>
+          <%- include('partials/multiple.ejs', {topics: getMultipleTopics()}) %>
+          <%- include('partials/judge.ejs', {topics: getJudgeTopics()}) %>
+          <%- include('partials/short-answer.ejs', {topics: getShortAnswerTopics()}) %>
           <div class="modal-footer">
-          <button type="submit" class="btn btn-primary btn-lg btn-block">提交</button>
-          <% include partials/modal.ejs %>
+            <button type="submit" class="btn btn-primary btn-lg btn-block" id="submitButton">提交</button>
+            <%include partials/modal.ejs%>
           </div>
         </form>
       </div>
     </div>
-
   </body>
-
-  <script src="../../public/javascript/jquery.min.js"></script>
-  <script src="../../public/javascript/bootstrap.min.js"></script>
-
+  <% include partials/jsindex.ejs %>
 </html>
