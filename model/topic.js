@@ -12,6 +12,6 @@ Topic.prototype.setInputs = function(inputs) {
 }
 
 Topic.prototype.mark = function() {
-//mark
+  //mark
 }
 module.exports = Topic;

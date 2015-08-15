@@ -1,6 +1,3 @@
-/**
- * Created by liyuanyuan on 8/13/15.
- */
 var FillInBlanks = require('./fill-in-blanks.js');
 var Single = require('./single.js');
 var Multiple = require('./multiple.js');
@@ -8,7 +5,7 @@ var Judge = require('./judge.js');
 var ShortAnswer = require('./short-answer.js');
 
 function Factory() {
-
+  
 }
 
 Factory.prototype.creatTopic = function(topic) {

@@ -10,4 +10,5 @@ Multiple.prototype.constructor = Multiple;
 Multiple.prototype.mark = function() {
   return this.inputs.join('') === this.answer.join('') ? this.score : 0;
 }
+
 module.exports = Multiple;

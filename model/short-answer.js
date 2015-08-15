@@ -8,7 +8,7 @@ ShortAnswer.prototype = Object.create(Topic.prototype);
 ShortAnswer.prototype.constructor = ShortAnswer;
 
 ShortAnswer.prototype.mark = function() {
-    return this.inputs.join('') === this.answer.join('') ? this.score : 0;
+  return this.inputs.join('') === this.answer.join('') ? this.score : 0;
 }
 
 module.exports = ShortAnswer;

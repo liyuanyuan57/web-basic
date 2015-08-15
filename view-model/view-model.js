@@ -1,6 +1,3 @@
-/**
- * Created by liyuanyuan on 8/13/15.
- */
 var FillInBlanks = require('../model/fill-in-blanks.js');
 var Single = require('../model/single.js');
 var Multiple = require('../model/multiple.js');
@@ -56,7 +53,6 @@ ViewModel.prototype.getTotalscore = function() {
   this.topics.forEach(function(topic) {
     totalscore += topic.mark();
   });
-  console.log(totalscore);
   return totalscore;
 };
 
@@ -77,11 +73,5 @@ ViewModel.prototype.getUserInfo = function() {
     };
   }
 };
-
-
-
-
-
-
 
 module.exports = ViewModel;
