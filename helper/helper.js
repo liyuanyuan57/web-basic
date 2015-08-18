@@ -8,10 +8,9 @@ function TopicHelper() {}
 TopicHelper.prototype.getTopics = function(data) {
   var topics = [];
   var factory = new Factory();
-  data.topics.forEach(function(topic) {
+  data.forEach(function(topic) {
     topics.push(factory.creatTopic(topic));
   });
-
   return topics;
 };
 
