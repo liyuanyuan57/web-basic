@@ -5,7 +5,7 @@ var Judge = require('./judge.js');
 var ShortAnswer = require('./short-answer.js');
 
 function Factory() {
-  
+
 }
 
 Factory.prototype.creatTopic = function(topic) {
@@ -20,7 +20,6 @@ Factory.prototype.creatTopic = function(topic) {
   } else if (topic.type === "shortAnswer") {
     return new ShortAnswer(topic.title, topic.name, topic.options, topic.score, topic.answer);
   }
-
 };
 
 

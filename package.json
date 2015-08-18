@@ -19,9 +19,19 @@
   "homepage": "https://github.com/liyuanyuan57/web-basic#readme",
   "dependencies": {
     "body-parser": "^1.13.3",
+    "bootstrap": "^3.3.5",
     "ejs": "^2.3.3",
     "express": "^4.13.3",
     "jquery": "^2.1.4",
-    "lodash": "^3.10.1"
+    "lodash": "^3.10.1",
+    "mysql": "^2.8.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-jshint": "^1.11.2",
+    "gulp-less": "^3.0.3",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.2.0"
   }
 }

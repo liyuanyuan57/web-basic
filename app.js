@@ -20,7 +20,7 @@ app.use('/public',express.static(__dirname + '/public'));
 app.use(express.static(path.join(__dirname, 'public')));
 router.setRouter(app);
 
-app.locals.data = require('./seeds/data.json');
+//app.locals.data = require('./seeds/data.json');
 
 var server = app.listen(3000, function() {
   var host = server.address().address;
